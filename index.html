@@ -1,0 +1,744 @@
+<!DOCTYPE HTML>
+<!--
+    Read Only by HTML5 UP
+    html5up.net | @ajlkn
+    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+    <head>
+        <title>Mowbray Medical</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+        <link rel="stylesheet" href="assets/css/main.css" />
+        <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110873400-1"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'UA-110873400-1');
+        </script>       
+        <style>
+            /* Useful https://alvarotrigo.com/blog/css-animations-scroll/ */
+            .reveal{
+                position: relative;
+                transform: translateY(150px);
+                opacity: 0;
+                transition: 2s all ease;
+            }
+            .reveal.active{
+                transform: translateY(0);
+                opacity: 1;
+            }
+        </style>
+        <script>
+            function reveal() {
+                var reveals = document.querySelectorAll(".reveal");
+                for (var i = 0; i < reveals.length; i++) {
+                    var windowHeight = window.innerHeight;
+                    var elementTop = reveals[i].getBoundingClientRect().top;
+                    var elementVisible = 150;
+                    if (elementTop < windowHeight - elementVisible) {
+                        reveals[i].classList.add("active");
+                    } else {
+                        reveals[i].classList.remove("active");
+                    }
+                }
+            }
+            window.addEventListener("scroll", reveal);
+
+            // To check the scroll position on page load
+            reveal();
+        </script>
+    </head>
+    <body>
+    
+
+        <!-- Header -->
+            <section id="header">
+                <header>
+                    <span class="image avatars"><img src="images/Logo.png" alt="" /></span>
+                    <!--<h1 id="logo"><a href="#">Mowbray Medical</a></h1> -->
+                    <p>Your health is<br />
+                        our priority</p>
+                    <p>Ph: 03 6326 7555</p>
+                </header>
+                <nav id="nav">
+                    <ul>
+                        <li><a href="#one" class="active">About</a></li>
+                        <li><a href="#Open">Opening Hours</a></li>
+                        <li><a href="#two">Services and Procedures</a></li>
+                        <li><a href="#three">Team</a></li>
+                        <li><a href="#values">Our Values</a></li>
+                        <li><a href="#healthcheck">Health Checks</a></li>
+                        <li><a href="#four">Billing</a></li>
+                        <li><a href="#MyMedicare">MyMedicare</a></li>
+                        <li><a href="#FAQ">Common Questions</a></li>
+                        <li><a href="#Emergency">Emergency Contacts</a></li>
+                        <li><a href="#Resources">Resources</a></li>
+                        <li><a href="#five">Contact</a></li>
+                    </ul>
+                </nav>
+                <footer>
+                    <ul class="icons">
+                        <!-- <li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+                        <li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+                        <li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li> -->
+                        <li><a href="https://www.facebook.com/MowbrayMedical/" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+                        <li><a href="https://www.instagram.com/mowbraymedical/" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+                        <li><a href="tel:0363267555" class="icon fa-phone-square"><span class="label">Phone</span></a></li>
+                        <!-- <li><a href="#" class="icon fa-envelope"><span class="label">Email</span></a></li> -->
+                    </ul>
+                </footer>
+            </section>
+
+        <!-- Wrapper -->
+            <div id="wrapper">
+
+                <!-- Main -->
+                    <div id="main">
+
+                        <!-- One -->
+                            <section id="one">
+                                <div class="container">
+                                    <header class="major">
+                                        <h2>Mowbray Medical</h2>
+                                        <p>03 6326 7555 &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <a href="https://www.hotdoc.com.au/medical-centres/mowbray-TAS-7248/mowbray-medical/doctors" title="Book medical appointments with doctors at Mowbray Medical in Mowbray TAS 7248, through HotDoc" target="_blank" data-hotdoc-widget="lightbox" data-hotdoc-button class="large icon-hotdoc">Book Appointment</a><script async src="https://cdn.hotdoc.com.au/static/assets/js/hotdoc-widgets.min.js" charset="utf-8"></script> 
+                                        </p> 
+                                        <p> 
+                                            <a href="https://www.facebook.com/MowbrayMedical/"><img height="40px"src="images/finishedfacebook.png"></a> 
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                                            <a href="https://www.instagram.com/mowbraymedical/"><img height="40px"src="images/instaicon.png"></a>
+                                        </p> 
+                                        <h2></h2>
+                                        <p>Shop 3/282 Invermay Road, Mowbray Tas 7248.</p>
+                                        <h2></h2>
+                                        <p>
+                                            We are a community friendly medical practice, committed to ensuring that everybody is treated with dignity and respect, without judgement or discrimination, regardless of their ability, cultural background, religion, ethnicity, gender identity, intersex status or sexual orientation. </br>
+                                            Supporting the Culturally and linguistically diverse (CALD) and LGBTIQA+ communities</br>
+                                            We promote adolescent health.</br>
+                                        </p>
+                                        <!-- <p>We are a community friendly medical practice and pride ourselves on welcoming all individuals. </br>
+                                        We promote adolescent health. </br>
+                                        We support culturally and linguistically diverse (CALD) and lesbian, gay, bisexual, transgender, intersex (LGBTI) communities.</p> -->
+                                        </header>
+                                    <p>Mowbray Medical is a training practice accredited with RACGP and the University of Tasmania.  From time to time we have doctors working here who are gaining specialist skills in general practice and medical students experiencing patient care outside of the hospital setting.
+                                    </p>
+                                    <div class="reveal">
+                                        <p><img src="images/correct_flags.png" width="100%" /></p>
+                                    </div>
+                                    <div class="reveal">
+                                        <p><img src="images/newagpal.png" width="100%" /></p>
+                                    </div>
+                                </div>
+                            </section>
+                            
+                            <!-- Open -->
+                            <section id="Open">
+                                <div class="container">
+                                    <header class="major">
+                                        <h2>Opening Hours</h2>
+                                    </header>
+                                    <p><span class="image right reveal"><img src="images/reception_desk.jpg" alt="" /></span>
+                                        We are open:</br>
+                                        Mon to Fri 8am - 5:30pm</br> </br>
+                                    
+                                        PLEASE BRING YOUR MEDICARE CARD WITH YOU </br> </br>
+                                        Appointments are scheduled on a standard 15 minute consultation time.  Extended consultations are available, so if you believe you require a longer appointment please let the reception team know.</p>
+                                        
+                                        <h2>After hours care</h2>
+                                        <p>
+                                            Hello Home Doctor - <a href="tel:+134100">134 100</a> </br>
+                                            Emergency – <a href="tel:+000">000</a> and ask for an ambulance </br>
+                                            National Home Doctor service – <a href="tel:+13 74 25">13 74 25</a> </br>
+                                            <!-- GP help line – 1800 022 222 </br> -->
+                                            </br>
+                                            <img class="reveal" src="images/hello_home_doctor.jpg" alt="" width="100%"> </br>
+                                        </p>
+                                        
+                                </div>
+                            </section>
+                        <!-- Two -->
+                            <section id="two">
+                                <div class="container">
+                                    <h3>Services</h3>
+                                    <p>You can find good health weblinks in the <a href="#Resources">resource</a> section. Click on the below for more information</p>
+                                    <ul class="feature-iconses">
+                                        <li class="fa-heartbeat"><a id="show_womens_health_info" style="cursor:pointer;">Women's health</a></li>
+                                    </ul>
+                                    <ul id="womens_health_info" class="feature-icons" style="display: none;">
+                                        <li class="fa-female">Period issues - irregular periods, no period, Heavy bleeding</li>
+                                        <li class="fa-female">Polycystic ovary Syndrome (PCOS)</li>
+                                        <li class="fa-female">Endometriosis</li>
+                                        <li class="fa-female">Fertility concerns</li>
+                                        <li class="fa-female">CST</li>
+                                        <li class="fa-female">All gynaecology care</li>
+                                        <li class="fa-female">Women's heart care</li>
+                                        <li class="fa-female">Anything you are worrying about deserves an ask!</li>
+                                    </ul>
+                                    <ul class="feature-iconses">
+                                        <li class="fa-heartbeat"><a id="show_older_womens_health_info" style="cursor:pointer;">Older Women's health</a></li>        
+                                    </ul>
+                                    <ul id="older_womens_health_info" class="feature-icons" style="display: none;">
+                                        <li class="fa-female">Perimenopause</li>
+                                        <li class="fa-female">Menopause</li>
+                                        <li class="fa-female">Bladder care</li>
+                                        <li class="fa-female">Incontinence - Pessary fitting</li>
+                                        <li class="fa-female">All gynaecology care</li>
+                                        <li class="fa-female">Polycystic ovarian syndrome (PCOS)</li>
+                                        <li class="fa-female">Endometriosis</li>
+                                        <li class="fa-female">Fertility concerns</li>
+                                        <li class="fa-female">Anything you are worrying about deserves an ask!</li>
+                                    </ul>
+                                    <ul class="feature-iconses">
+                                        <li class="fa-heartbeat"><a id="show_sexual_health" style="cursor:pointer;">Sexual health</a></li>
+                                    </ul>
+                                    <ul id="sexual_health" class="feature-icons" style="display: none;">
+                                        <li class="fa-medkit">Counselling</li>
+                                        <li class="fa-medkit">STI screening and management</li>
+                                    </ul>
+                                    <ul class="feature-iconses">
+                                        <li class="fa-heartbeat"><a id="show_contraception" style="cursor:pointer;">Contraception</a></li>
+                                    </ul>
+                                    <ul id="contraception" class="feature-icons" style="display: none;">
+                                        <li class="fa-female">Discuss options that best suit your current need</li>
+                                        <li class="fa-female">IUD insertion</li>
+                                        <li class="fa-female">Implanon insertion & removal</li>
+                                        <li class="fa-female">Depot Provera.</li>
+                                    </ul>
+                                    <ul class="feature-iconses">
+                                        <li class="fa-heartbeat"><a id="show_pregnancy" style="cursor:pointer;">Unplanned pregnancy options</a></li>
+                                    </ul>
+                                    <div id="pregnancy" style="display: none;">
+                                        <p>We understand that some decisions in life are difficult and extra support may be needed. We have dedicated female GPs that are here to support you.</p>
+                                    <ul class="feature-icons">
+                                        <li class="fa-female">Termination options</li>
+                                        <ul>
+                                            <ul class="feature-iconses">
+                                            <li class="fa-asterisk">MToP - we support you through this process</li>
+                                            <li class="fa-asterisk">Referral for surgical termination</li>
+                                        </ul>
+                                        </ul>
+                                        
+                                        <li class="fa-female">Counselling </li>
+                                        <li class="fa-female">Financial help available </li>
+                                    </ul>
+                                    </div>
+                                    <ul class="feature-iconses">
+                                        <li class="fa-heartbeat"><a id="show_pregnancy_care" style="cursor:pointer;">Pregnancy care</a></li>
+                                    </ul>
+                                    <ul id="pregnancy_care" class="feature-icons" style="display: none;">
+                                        <li class="fa-female">Preconception care</li>
+                                        <li class="fa-female">Shared antenatal care</li>
+                                        <li class="fa-female">Post delivery care</li>
+                                        <li class="fa-female">6-week post-natal checks</li>
+                                    </ul>
+                                    <ul class="feature-iconses">
+                                        <li class="fa-heartbeat"><a id="show_mens_health" style="cursor:pointer;">Mens Health</a></li>
+                                    </ul>
+                                    <ul id="mens_health" class="feature-icons" style="display: none;">
+                                        <li class="fa-male">Sexual health</li>
+                                        <li class="fa-male">STI screening and management</li>
+                                        <li class="fa-male">Prostate issues</li>
+                                        <li class="fa-male">Erectile dysfunction</li>
+                                        <li class="fa-male">Heart checks</li>
+                                        <li class="fa-male">Mental Health</li>
+
+                                    </ul>
+                                    <ul class="feature-iconses">
+                                        <li class="fa-heartbeat"><a id="show_youth_health" style="cursor:pointer;">Youth health</a></li>
+                                    </ul>
+                                    <ul id="youth_health" class="feature-icons" style="display: none;">
+                                        <li class="fa-child">Mental Health</li>
+                                        <li class="fa-child">Sexual Health</li>
+                                        <li class="fa-child">Contraception</li>
+                                        <li class="fa-child">Unplanned pregnancy</li>
+                                        <li class="fa-child">Eating disorder</li>
+                                        <li class="fa-child">Menstrual issues</li>
+                                    </ul>
+                                    <ul class="feature-iconses">
+                                        <li class="fa-heartbeat"><a id="show_infant_toddler_health" style="cursor:pointer;">Infant/toddler health</a></li>
+                                    </ul>
+                                    <ul id="infant_toddler_health" class="feature-icons" style="display: none;">
+                                        <li class="fa-child">Immunisations</li>
+                                        <li class="fa-child">6-week check</li>
+                                        <li class="fa-child">9-month baby check</li>
+                                    </ul>
+                                    <ul class="feature-iconses">
+                                        <li class="fa-heartbeat"><a id="show_aging" style="cursor:pointer;">Care for the aging</a></li>
+                                    </ul>
+                                    <ul id="aging" class="feature-icons" style="display: none;">
+                                        <li class="fa-universal-access">Yearly AHAs</li>
+                                        <li class="fa-universal-access">Home medicine reviews</li>
+                                    </ul>
+                                    <ul class="feature-iconses">
+                                        <li class="fa-heartbeat"><a id="show_diabetes" style="cursor:pointer;">Diabetes care</a></li>
+                                    </ul>
+                                    <ul id="diabetes" class="feature-icons" style="display: none;">
+                                        <li class="fa-stethoscope">6 monthly dedicated checks</li>
+                                    </ul>
+                                    <ul class="feature-iconses">
+                                        <li class="fa-heartbeat"><a id="show_asthma_care" style="cursor:pointer;">Asthma care</a></li>
+                                    </ul>
+                                    <ul id="asthma_care" class="feature-icons" style="display: none;">
+                                        <li class="fa-heart">Asthma plans – for school aged children</li>
+                                        <li class="fa-heart">6 monthly dedicated checks</li>
+                                        <li class="fa-heart">Checking for correct puffer use</li>
+                                    </ul>
+                                    <ul class="feature-iconses">
+                                        <li class="fa-heartbeat"><a id="show_mental_health" style="cursor:pointer;">Mental Health</a></li>
+                                    </ul>
+                                    <ul id="mental_health" class="feature-icons" style="display: none;">
+                                        <li class="fa-user-md">Consultations</li>
+                                        <li class="fa-user-md">Eating Disorders</li>
+                                        <li class="fa-user-md">MHCPs</li>
+                                        <li class="fa-user-md">MHCP reviews</li>
+                                        <li class="fa-user-md">Referrals</li>
+                                    </ul>
+                                    <ul class="feature-iconses">
+                                        <li class="fa-heartbeat"><a id="show_chronic_disease_care" style="cursor:pointer;">Chronic disease care</a></li>
+                                    </ul>
+                                    <div id="chronic_disease_care" style="display: none;">
+                                        <p>
+                                            A chronic disease is defined broadly as a medical condition that requires extra medical support, limits your daily activities or living conditions and lasts for 12 months or more.
+                                            Such as but not limited to: Diabetes, Cancer, Heart disease, COPD, Cystic Fibrosis, Asthma, Arthritis, Crohn’s Disease.
+                                            Plans available to help keep your care on track:
+                                        </p>
+                                    <ul class="feature-icons" >
+                                        <li class="fa-heart">GPMP</li>
+                                        <li class="fa-heart">TCA</li>
+                                        <li class="fa-heart">Plan reviews</li>
+                                    </ul>
+                                    </div>
+
+                                    <ul class="feature-iconses">
+                                        <li class="fa-heartbeat">Family medicine</li>
+                                        <li class="fa-heartbeat">Emergency care</li>
+                                        <li class="fa-heartbeat">Immunisations</li>
+                                        <li class="fa-heartbeat">ECG</li>
+                                        <li class="fa-heartbeat">Migrant health</li>
+                                        <li class="fa-heartbeat">Skin checks and procedures</li>
+                                        <li class="fa-heartbeat">Sexual health</li>
+                                        <li class="fa-heartbeat">Adolescent and student health</li>
+                                        <li class="fa-heartbeat">Cryotherapy</li>
+                                        <li class="fa-heartbeat">Wound care</li>
+                                        <li class="fa-heartbeat">Medical assessments</li>
+                                        <li class="fa-heartbeat">Minor surgery</li>
+                                        <li class="fa-heartbeat">Longer consult times are available</li>
+                                        <li class="fa-heartbeat">24hr Holter monitoring</li>
+                                        <li class="fa-heartbeat">24 BP monitoring</li>
+                                        <li class="fa-heartbeat">Travel health</li>
+                                        <li class="fa-heartbeat">Palliative Care</li>
+                                    </ul>
+                                    <img class="reveal" src="images/Services.JPG" width="100%" />
+                                </div>
+                            </section>
+                        <!-- Three -->
+                            <section id="three">
+                                <div class="container">
+                                    <h3>Doctors</h3>
+                                    <div class="features">
+                                        <article>
+                                            <img class ="imaged reveal" src="images/Jane-Changed.jpg" alt="" />
+                                            <div class="inner">
+                                                <h4>Dr Jane Hampson</h4>
+                                                <p>Dr Jane Hampson MB BCh, MRCGP, FRACGP specialises in family medicine, migrant health, sexual health/contraception and antenatal shared care.</p>
+                                            </div>
+                                        </article>
+                                        </article>
+                                        <article>
+                                            <img class="imaged reveal" src="images/shadi.jpg" alt="" />
+                                            <div class="inner">
+                                                <h4>Dr Shadi Emamisadr</h4>
+                                                <p>Dr Shadi joined our team in August 2020.  She has a special interest in women’s health and cancer research.  Away from the clinic she enjoys spending time with family and friends.  Fluently speaks Farsi (Persian).</p>
+                                            </div>
+                                        </article>
+                                        <!-- <article>
+                                            <img class="imaged" src="images/Jo.JPG" alt="" />
+                                            <div class="inner">
+                                                <h4>Practice Manager</h4>
+                                                <p>Jo Bean is an experienced and well qualified Practice Manager. She supervises the smooth running of the practice, closely monitoring the security processes to ensure privacy and confidentiality of all information is obtained.</p>
+                                            </div>
+                                        </article> -->
+                                        <article>
+                                            <img class ="imaged reveal" src="images/Mahdi.jpg" alt="" />
+                                            <div class="inner">
+                                                <h4>Dr Mahdi Vakili</h4>
+                                                <p>Dr Mahdi Vakili, has a special interest in musculoskeletal issues, internal medicine and mental health.  In his free time he enjoys spending time with his family, camping, swimming and playing volley ball. Fluently speaks Farsi (Persian).</p>
+                                            </div>
+                                        </article>
+                                        <article>
+                                            <img class ="imaged reveal" src="images/trishc.jpg" alt="" />
+                                            <div class="inner">
+                                                <h4>Dr Patricia Muddiman</h4>
+                                                <p>Dr. Trish completed her training in "the Tassie of Canada" also known as Saskatchewan (less dairy, more sweet corn, and a lot more snow!). She relocated from Toronto in 2022 but has lived and worked in rural and urban communities ranging from Cape Town to the Arctic! Her passion for general practice is rivalled only by her enthusiasm for family, food and fitness! She is a keen environmentalist, practiced vegetarian and practicing bushwalker. She has cultivated a niche in women's health and is also working part time at the Women's and Children's Services at LGH.</p>
+                                            </div>
+                                        </article>
+                                        <article>
+                                            <img class ="imaged reveal" src="images/farhangi.jpg" alt="" />
+                                            <div class="inner">
+                                                <h4>Dr Alireza Farhangi</h4>
+                                                <p>
+                                                I am experienced GP from Iran, having completed my study in Iran in 2005.
+                                                I have a strong interest in skin conditions, chronic disease care and women's health. My career has taken me to Europe for a time and now here to lovely Tasmania. I am very grateful for the opportunity to work with such friendly and amazing people.
+                                                In my free time I love to emerse myself in nature, music, travels and driving.
+                                                My native spoken language is Persian (Farsi) but do speak and understand English relatively well.
+                                                </p>
+                                            </div>
+                                        </article>
+                                        <h3>Practice Manager</h3>
+                                        <ul class="feature-icons">
+                                            <li class="fa-user">Jo Bean</li>                                            
+                                        </ul>
+                                    <h3>Nurses</h3>
+                                    <ul class="feature-icons">
+                                        <li class="fa-user">RN - Tiffany</li>
+                                        <li class="fa-user">RN - Emmali</li>
+                                        <li class="fa-user">RN - Corinna</li>
+                                    </ul>
+                                    <h3>Admin</h3>
+                                    <ul class="feature-icons">
+                                        <li class="fa-user">Monique</li>
+                                        <li class="fa-user">Kurt</li>
+                                        <li class="fa-user">Kobi-Anne</li>
+                                    </ul>
+                                    </div>
+                                </div>
+                            </section>
+                            <section id="healthcheck">
+                                <div class="container">
+                                    <h3>Health Checks are Available</h3>
+                                    <p>These health checks will be bulk billed.  Please mention when booking an appointment. </p>
+                                    <ul class="feature-icons">
+                                        <li class="fa-heartbeat">45-49 years full health check</li>
+                                        <li class="fa-heartbeat">40-49 years type 2 diabetes risk evaluation</li>
+                                        <li class="fa-heartbeat">Aboriginal and Torres Strait Islander yearly health check</li>
+                                        <li class="fa-heartbeat">Asthma reviews</li>
+                                        <li class="fa-heartbeat">Diabetes reviews</li>
+                                        <li class="fa-heartbeat">75 years plus annual health assessment</li>
+                                        <li class="fa-heartbeat">Mental health care plans</li>
+                                        <li class="fa-heartbeat">Chronic disease management plans</li>
+                                        <li class="fa-heartbeat">Eating Disorder Plans</li>
+                                    </ul>
+                                </div>
+                            </section>
+
+                        <!-- Values -->
+                            <section id="values">
+                                <div class="container">
+                                    <h3>Our Values</h3>
+                                    <p> At Mowbray Medical We Value:</p>
+                                    <ul class="feature-icons">
+                                        <li class="fa-heartbeat">Integrity</li>
+                                        <li class="fa-heartbeat">Respect</li>
+                                        <li class="fa-heartbeat">Empathy</li>
+                                        <li class="fa-heartbeat">Privacy</li>
+                                    </ul>
+                                    <img class="reveal" src="images/values.jpg" width="70%" />
+                                </div>
+                            </section>
+                            <!-- Four -->
+                            <section id="four">
+                                <div class="container">
+                                    <header class="major">
+                                        <h2>Billing</h2>
+                                    </header>
+                                    <p>Drs at Mowbray Medical work as private contractors and so decide their own fees. The fees advertised are what has been agreed by all Drs as a group at this time. </br></br>
+                                    We accept cash or eftpos.  </br> </br>
+                                    Medicare rebate is available on the day if you have your savings card with you.  </br> </br>
+                                    
+                                    <table style = "width:100%">
+                                    <tr>
+                                        <th>Item Number</th>
+                                        <th>Full fee</th>
+                                        <th>Concession rate</th>
+                                        <th>Medicare rebate</th>
+                                    </tr>
+                                    <tr>
+                                        <td>3. Brief Consults</td>
+                                        <td>$53</td>
+                                        <td>$42</td>
+                                        <td>$19.60</td>
+                                    </tr>
+                                    <tr>
+                                        <td>23. < 20 mins</td>
+                                        <td>$95</td>
+                                        <td>$73</td>
+                                        <td>$42.85</td>
+                                    </tr>
+                                    <tr>
+                                        <td>36. > 20 mins</td>
+                                        <td>$145</td>
+                                        <td>$124</td>
+                                        <td>$82.90</td>
+                                    </tr>
+                                    <tr>
+                                        <td>44. > 40 mins</td>
+                                        <td>$190</td>
+                                        <td>$165</td>
+                                        <td>$122.15</td>
+                                    </tr>
+                                    </table>
+                                    
+                                    They provide bulk billing to </br> </br>
+                                    
+                                    <ul class="feature-icons">
+                                        <li class="fa-heartbeat">Children under 16 years</li>
+                                        <li class="fa-heartbeat">Pensioners over 80 years of age</li>
+                                        <li class="fa-heartbeat">DVA gold card holders</li>
+                                        <li class="fa-heartbeat">Antenatal shared care</li>
+                                        <li class="fa-heartbeat">Listed health checks and care plans</li>
+                                    </ul>
+                                    
+                                    <strong>A 2-hour cancellation time is required as failure to cancel will incur a non-rebatable missed appointment fee. </strong></br> </br>
+                                    
+                                    SMS reminders are sent.
+                                    
+                                    </p>
+                                </div>
+                            </section>
+
+                            <section id="MyMedicare">
+                                <div class="container">
+                                    <header class="major">
+                                        <h3>MyMedicare - Patient Registration</h3>
+                                    </header>
+                                    <p>
+                                        MyMedicare was introduced into the health sector in 2023. </br>
+                                        This is a voluntary patient registration model, aiming to formalise relationships between patients, Drs and other care providers. </br>
+                                        For more information</br>
+                                    </p>
+                                    <p>
+                                        <ul class="feature-icons">
+                                            <li class="fa-heartbeat"><a href="https://www.health.gov.au/our-work/mymedicare/about">About MyMedicare</a></li>
+                                            <li class="fa-heartbeat"><a href="https://www.servicesaustralia.gov.au/register-for-mymedicare?context=37386">Register for MyMedicare</a></li>
+                                        </ul>
+                                    </p>
+                                </div>
+                            </section>
+                            <!-- Common Questions -->
+                                    <section id="FAQ">
+                                    <div class="container">
+                                    <header class="major">
+                                        <h2>Common Questions</h2>
+                                    </header>
+                                    <p>
+                                    <div class=icones><ul class="feature-iconses">
+                                        <li class="fa-question-circle">Are we taking on new patients?</li>
+                                        <p>Yes</p>
+                                        <li class="fa-question-circle">Do Doctors Bulk Bill?</li>
+                                        <p>Due to cuts in federal funding, doctors are unable to provide a bulk billing service to all patients.</p>
+                                        <p>Doctors do provide bulk billing to</p>
+                                        <li>
+                                        <ul class="feature-icons">
+                                        <li class="fa-question-circle">Children under 16 years</li>
+                                        <li class="fa-question-circle">Pensioners over 80 years of age</li>
+                                        <li class="fa-question-circle">DVA gold card holders</li>
+                                        <li class="fa-question-circle">Antenatal shared care</li>
+                                        <li class="fa-question-circle">Listed health checks and care plans</li>
+                                        </ul>
+                                        <p>For everyone else payment is required on the day.</p></li>
+                                        <li class="fa-question-circle">How do I claim my Medicare rebate?</li>
+                                        <p>We can offer your rebate back on the day if you have your savings card with you.  Alternatively, if you have listed your banking details with Medicare
+                                         we can arrange for your rebate to go back into your account directly from Medicare.</p>
+                                        <li class="fa-question-circle">What if I have lost my Medicare card?</li>
+                                        <p>Reception team can look up and see if you have a current Medicare card number and give you the 
+                                        number to apply for a replacement card. You can still be seen as a patient, however if you card is
+                                        expired you will be required to pay on the day.</p>
+                                        <li class="fa-question-circle">How old do I have to be to have my own Medicare card?</li>
+                                        <p>You can apply for your own card as young as 14. Reception team can help with your enquiries.</p>
+                                        <li class="fa-question-circle">Do doctors do home visits?</li>
+                                        <p>No</p>
+                                        <li class="fa-question-circle">Do the Drs run on time?</li>
+                                        <p>Our Drs do their very best to run on time, however unfortunately there are emergencies and difficulties that require extra time. 
+                                        Reception team will do their best to keep you up to date with waiting times. </p>
+                                        <li class="fa-question-circle">What is the cancellation policy?</li>
+                                        <p>A 2 hour cancellation time is required otherwise a missed appointment fee applies.</p>
+                                        <li class="fa-question-circle">Is there close parking?</li>
+                                        <p>Yes, you will find parking out the back with access via Invermay Rd or Cadorna St.  Including disabled parking.</p>
+                                        <li class="fa-question-circle">How can I get there via public transport?</li>
+                                        <p>Metro buses run regularly from the city or joining suburbs, the closest stop from the City is Stop 9.  For more information visit: <a href="https://www.metrotas.com.au/timetables/launceston/north/">https://www.metrotas.com.au/timetables/launceston/north/</a></p>
+                                        <li class="fa-question-circle">Need a repeat on a prescription?</li>
+                                        <p><i>Drs discretion – conditions apply.</i>  These can be ordered via <a href="https://www.hotdoc.com.au/medical-centres/mowbray-TAS-7248/mowbray-medical/doctors">hot doc</a>, over the phone to reception or via a general appointment.  You will need to allow 3 working days.  Costs apply.</p>
+                                        <li class="fa-question-circle">Do you require a new ongoing referral?</li>
+                                        <p><i>Drs discretion – conditions apply.</i>  These can be ordered via <a href="https://www.hotdoc.com.au/medical-centres/mowbray-TAS-7248/mowbray-medical/doctors">hot doc</a>, over the phone to reception or via a general appointment.  You will need to allow 3 working days.  Costs apply.</p>
+
+                                    </ul>
+                                    </p>
+                                    </div>
+                                    </div>
+                                    </section>
+                                <!-- End -->
+                                
+                                
+                                <!-- Emergency Contacts Page -->
+                                    <section id="Emergency">
+                                    <div class="container">
+                                    <header class="major">
+                                        <h2>Emergency Contacts</h2>
+                                    </header>
+                                    <p>
+                                    <div class=icons><ul class="feature-icons">
+                                        <li class="fa-ambulance"><a href="tel:000">Emergency - 000</a></li>
+                                        <li class="fa-ambulance"><a href="tel:1800332388">Mental Health Hotline - 1800 332 388</a></li>
+                                        <li class="fa-ambulance"><a href="tel:131114">Lifeline - 13 11 14</a></li>
+                                        <li class="fa-ambulance"><a href="tel:1300224636">Beyond Blue - 1300 22 4636</a></li>
+                                        <li class="fa-ambulance"><a href="tel:1300789978">MensLine Australia - 1300 78 99 78</a></li>
+                                        <li class="fa-ambulance"><a href="tel:1800551800">Kids Helpline  - 1800 55 1800</a></li>
+                                        <li class="fa-ambulance"><a href="tel:1300659467">Suicide Call Back Service - 1300 659 467</a></li>
+                                        <li class="fa-ambulance"><a href="tel:1300368186">Family Drug Support - 1300 368 186</a></li>
+                                        <li class="fa-ambulance"><a href="tel:1800608122">Family Violence Support  - 1800 608 122</a></li>
+                                        <li class="fa-ambulance"><a href="tel:131126">Poisons Information - 13 11 26</a></li>
+                                    </ul>
+                                    </p>
+                                    </div>
+                                    </div>
+                                    </section>
+                                
+                                
+                                
+                        <!-- Resource Page -->
+                                    <section id="Resources">
+                                    <div class="container">
+                                    <header class="major">
+                                        <h2>Resources</h2>
+                                    </header>
+                                    <p>
+                                    <div class=icons><ul class="feature-icons">
+                                        <!-- <h4 id="covid19">COVID-19</h4>
+                                        <li class="fa-newspaper-o"><a href="https://www.coronavirus.tas.gov.au/vaccination-information/covid-19-vaccination">COVID-19 vaccination</a></li> -->
+                                        <h4 id="GeneralHealthQuestions">General Health Questions</h4>
+                                        <li class="fa-newspaper-o"><a href="https://www.betterhealth.vic.gov.au/">Better Health Victoria</a></li>
+                                        <h4 id="GeneralChildrensInformation">General Children's Information</h4>
+                                        <li class="fa-newspaper-o"><a href="https://www.rch.org.au/kidsinfo/">Royal Children's Hospital Melbourne</a></li>
+                                        <h4 id="HeartHealth">Heart Health</h4>
+                                        <li class="fa-newspaper-o"><a href="https://www.heartfoundation.org.au/">Heart Foundation Australia</a></li>
+                                        <h4 id="KidneyHealth">Kidney Health</h4>
+                                        <li class="fa-newspaper-o"><a href="https://kidney.org.au/">Kidney Health Australia</a></li>
+                                        <h4 id="COPD">COPD</h4>
+                                        <li class="fa-newspaper-o"><a href="https://lungfoundation.com.au/">Lung Foundation Australia</a></li>
+                                        <h4 id="Asthma">Asthma</h4>
+                                        <li class="fa-newspaper-o"><a href="https://www.nationalasthma.org.au/">National Asthma Council Australia</a></li>
+                                        <li class="fa-newspaper-o"><a href="https://www.asthmaaustralia.org.au/">Asthma Australia</a></li>
+                                        <li class="fa-newspaper-o"><a href="https://airrater.org/">Air Rater</a></li>
+                                        <h4 id="CancerCouncil">Cancer Council</h4>
+                                        <li class="fa-newspaper-o"><a href="https://www.cancer.org.au/">Cancer Council</a></li>
+                                        <h4 id="SunSafety">Sun Safety</h4>
+                                        <li class="fa-newspaper-o"><a href="https://www.sunsmart.com.au/">Sun Smart</a></li>
+                                        <h4 id="HealthyEating">Healthy Eating</h4>
+                                        <li class="fa-newspaper-o"><a href="https://www.baker.edu.au/health-hub/fact-sheets">Baker Institute Fact Sheet</a></li>
+                                        <li class="fa-newspaper-o"><a href="http://choosetap.com.au/">Choose Tap</a></li>
+                                        <li class="fa-newspaper-o"><a href="https://www.eatforhealth.gov.au/">Eat for Health</a></li>
+                                        <h4 id="Diabetes">Diabetes</h4>
+                                        <li class="fa-newspaper-o"><a href="https://www.diabetesaustralia.com.au/">Diabetes Australia</a></li>
+                                        <h4 id="AnxietyandDepression">Anxiety and Depression</h4>
+                                        <li class="fa-newspaper-o"><a href="https://www.beyondblue.org.au/">Beyond Blue</a></li>
+                                        <li class="fa-newspaper-o"><a href="https://www.blackdoginstitute.org.au/">Black Dog Institute</a></li>.
+                                        <li class="fa-newspaper-o"><a href="https://au.reachout.com/">Reach Out</a></li>
+                                        <li class="fa-newspaper-o"><a href="https://www.smilingmind.com.au/">Smiling Mind</a></li>
+                                        <li class="fa-newspaper-o"><a href="https://www.moodgym.com.au/">Mood Gym</a></li>
+                                        <li class="fa-newspaper-o"><a href="https://headspace.org.au/">Head Space</a></li>
+                                        <li class="fa-newspaper-o"><a href="https://www.mycompass.org.au/">My Compass</a></li>
+                                        <h4 id="PhysicalHealth">Physical Health</h4>
+                                        <li class="fa-newspaper-o"><a href="https://www.parkrun.com.au/">Park Run</a></li>
+                                        <li class="fa-newspaper-o"><a href="https://walking.heartfoundation.org.au/">Heart Foundation</a></li>
+                                        <li class="fa-newspaper-o"><a href="http://www.activelaunceston.com.au/">Active Launceston</a></li>
+                                        <h4 id="Dementia">Dementia</h4>
+                                        <li class="fa-newspaper-o"><a href="https://www.dementia.org.au/">Dementia Australia</a></li>
+                                        <li class="fa-newspaper-o"><a href="https://yourbrainmatters.org.au/about-dementia/what-is-dementia">Your Brain Matters, What is Dementia</a></li>
+                                        <li class="fa-newspaper-o"><a href="https://www.utas.edu.au/wicking/understanding-dementia">UTAS Understanding Dementia</a></li>
+                                        <li class="fa-newspaper-o"><a href="https://www.utas.edu.au/wicking/preventing-dementia">UTAS Preventing Dementia</a></li>
+                                        <h4 id="MultipleSclerosis">Multiple Sclerosis</h4>
+                                        <li class="fa-newspaper-o"><a href="https://www.menzies.utas.edu.au/education/free-online-courses">Menzies Free Online Courses</a></li> 
+                                        <h4 id="Women">Women's Health</h4>
+                                        <li class="fa-newspaper-o"><a href="https://www.womenshealthtas.org.au/">Women’s Health Tasmania</a></li>        
+                                    </ul>
+                                    </p>
+                                    </div>
+                                    </div>
+                                    </section>
+
+                        <!-- Five -->
+                            <section id="five">
+                                <div class="container">
+                                    <h3>Contact Us</h3>
+                                    <ul class="feature-threeIcons">
+                                        <li class="fa-facebook-official"><a href="https://www.facebook.com/MowbrayMedical/">Facebook</a></li>
+                                        <li class="fa-instagram"><a href="https://www.instagram.com/mowbraymedical/">Instagram</a></li>
+                                        <li class="fa-phone-square"><a href="tel:0363267555">Phone</a></li>
+                                    </ul>
+                                    <p>Ph: 03 6326 7555 </br>
+                                    Fx: 03 6326 7905</br>
+                                    Shop 3/282 Invermay Road</br>
+                                    Mowbray Tas 7248</br>
+                                    (next door to the Terry White Pharmacy)</br></br> 
+                                    <p><span class="image right"><img src="images/TML.png" alt="" /></span>                                                
+                                    Tasmanian Medical Pathology (TML) on site Monday to Friday 8am to 3pm</br></br></br>
+                                    Mowbray Medical patients can call for their pathology or radiology results daily between 12-12.30 & 4-4.30</p>
+                                    <img src="images/entrance_web.jpg" width="100%" />
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d889.7048944277926!2d147.13227403342208!3d-41.40452225217412!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xaa70a79a03c13e35%3A0xb43a29db83c9f4ae!2s3%2F282+Invermay+Rd%2C+Mowbray+TAS+7248!5e0!3m2!1sen!2sau!4v1499747626624" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                                </div>
+                            </section>
+
+                                        
+                <!-- Footer -->
+                    <section id="footer">
+                        <div class="container">
+                            <ul class="copyright">
+                                <li>&copy; Mowbray Medical. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+                            </ul>
+                        </div>
+                    </section>
+
+            </div>
+
+        <!-- Scripts -->
+            <script src="assets/js/jquery.min.js"></script>
+            <script src="assets/js/jquery.scrollzer.min.js"></script>
+            <script src="assets/js/jquery.scrolly.min.js"></script>
+            <script src="assets/js/skel.min.js"></script>
+            <script src="assets/js/util.js"></script>
+            <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+            <script src="assets/js/main.js"></script>
+            <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+            <script src="list-builder.js"></script>
+
+            <script>
+                function attachListener(buttonID, dataID)
+                {
+                    var button = document.getElementById(buttonID);
+                    var data = document.getElementById(dataID);
+                    button.onclick = function() 
+                    {
+                        if(data.style.display == "none")
+                        {
+                            data.style.display = "inline-block";
+                        }
+                        else
+                        {
+                            data.style.display = "none";
+                        }
+                    }
+                }
+                attachListener("show_womens_health_info", "womens_health_info");
+                attachListener("show_older_womens_health_info", "older_womens_health_info");
+                attachListener("show_sexual_health", "sexual_health");
+                attachListener("show_contraception", "contraception");
+                attachListener("show_pregnancy", "pregnancy");
+                attachListener("show_pregnancy_care", "pregnancy_care");
+                attachListener("show_mens_health", "mens_health");
+                attachListener("show_youth_health", "youth_health");
+                attachListener("show_infant_toddler_health", "infant_toddler_health");
+                attachListener("show_aging", "aging");
+                attachListener("show_diabetes", "diabetes");
+                attachListener("show_asthma_care", "asthma_care");
+                attachListener("show_mental_health", "mental_health");
+                attachListener("show_chronic_disease_care", "chronic_disease_care");
+            </script>
+
+    </body>
+</html>
