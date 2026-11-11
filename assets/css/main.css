@@ -1575,7 +1575,7 @@
 
 		a:hover {
 			border-bottom-color: transparent;
-			color: #93d250 !important;
+			color: #91C65C !important;
 		}
 
 	strong, b {
@@ -1592,7 +1592,7 @@
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #93d250;
+		color: #91C65C;
 		font-weight: 700;
 		line-height: 1em;
 		margin: 0 0 0.5625em 0;
@@ -1727,7 +1727,7 @@
 	}
 
 	header.major h2 {
-		color: #93d250;
+		color: #91C65C;
 		font-size: 3.5em;
 	}
 
@@ -1790,7 +1790,7 @@
 		input[type="email"]:focus,
 		select:focus,
 		textarea:focus {
-			border-color: #93d250;
+			border-color: #91C65C;
 		}
 
 	.select-wrapper {
@@ -1900,7 +1900,7 @@
 
 		input[type="checkbox"]:focus + label:before,
 		input[type="radio"]:focus + label:before {
-			border-color: #93d250;
+			border-color: #91C65C;
 		}
 
 	input[type="checkbox"] + label:before {
@@ -2137,7 +2137,7 @@
 				}
 
 				ul.feature-icons li:before {
-					background: #93d250;
+					background: #91C65C;
 					border-radius: 100%;
 					color: #ffffff;
 					display: block;
@@ -2150,7 +2150,7 @@
 					width: 2.5em;
 				}
 				ul.feature-iconses li:before {
-					background: #93d250;
+					background: #91C65C;
 					border-radius: 100%;
 					color: #ffffff;
 					display: block;
@@ -2163,7 +2163,7 @@
 					width: 2.5em;
 				}
 				ul.feature-threeIcons li:before {
-					background: #93d250;
+					background: #91C65C;
 					border-radius: 100%;
 					color: #ffffff;
 					display: block;
@@ -2450,7 +2450,7 @@
 		input[type="reset"].special,
 		input[type="button"].special,
 		.button.special {
-			background-color: #93d250;
+			background-color: #91C65C;
 			color: #ffffff !important;
 		}
 
@@ -2539,7 +2539,7 @@
 		-webkit-justify-content: space-between;
 		-ms-justify-content: space-between;
 		justify-content: space-between;
-		background: #93d250;
+		background: #91C65C;
 		color: #d1f1e9;
 		height: 100%;
 		overflow-y: auto;
@@ -2650,7 +2650,7 @@
 
 						#header > nav ul li a.active {
 							background: #fff;
-							color: #93d250 !important;
+							color: #91C65C !important;
 						}
 
 					#header > nav ul li:first-child {
@@ -2929,7 +2929,7 @@
 					}
 
 					#titleBar .toggle:before {
-						background: #93d250;
+						background: #91C65C;
 						color: #ffffff;
 						content: '\f0c9';
 						display: block;
@@ -3196,7 +3196,7 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    background-color: #93d250;
+    background-color: #91C65C;
     color: #e81123 ;
     width: 90%;
     max-width: 800px;
@@ -3237,7 +3237,7 @@
 #popup-box button {
     padding: 0px;
     border: 1px solid #333;
-	background-color:#93d250;
+	background-color:#91C65C;
 	width: 30%;
 	height: 45px;
 	
